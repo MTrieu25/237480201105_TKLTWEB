@@ -1,0 +1,16 @@
+h2{
+    color: red;
+    text-align: center;
+}
+p1{
+    font-size: 14;
+    font-style: italic;
+    color: white;
+    background-color: blue;
+}
+p2{
+    font-size: 14;
+    font-style: italic;
+    color: yellow;
+    background-color: brown;
+}
