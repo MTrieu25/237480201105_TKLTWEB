@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: red;
+}
+body{
+    background-color: rgb(239, 239, 108);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(7, 197, 134);
+}
+.a{
+    color: violet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    color: rgb(91, 91, 229);
+    font-family: 'Times New Roman', Times, serif;
+}
