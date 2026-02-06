@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhập 2 số và click vào nút tính tổng</h2>
+    <input type="text" name="sohang1"> +
+    <input type="text" name="sohang2"> =
+    <input type="text" name="ketqua" >
+    <input type="button" value="Tính tổng" 
+    onclick="document.getElementsByName('ketqua')[0].value=Number(document.getElementsByName('sohang1')[0].value)
+        +Number(document.getElementsByName('sohang2')[0].value);">
+</body>
+</html>

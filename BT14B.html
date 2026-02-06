@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính toán dùng radio</title>
+</head>
+<body>
+    <h2>Nhập 2 số và click vào nút tính </h2>
+    <input type="text" id="sohang1" placeholder="Số hạng 1"> <br>
+    <input type="text" id="sohang2" placeholder="Số hạng 2"> <br>
+    <input type="text" id="ketqua" placeholder="Kết quả"> <br>
+    <input type="radio" name="pheptinh" id="cong" checked> Cộng
+    <input type="radio" name="pheptinh" id="tru"> Trừ
+    <input type="radio" name="pheptinh" id="nhan"> Nhân
+    <input type="radio" name="pheptinh" id="chia"> Chia <br>
+    <input type="button" value="Tính" 
+    onclick="
+        if(cong.checked)
+            ketqua.value=Number(document.getElementById('sohang1').value)
+                +Number(document.getElementById('sohang2').value);
+        else if(tru.checked)
+            ketqua.value=Number(document.getElementById('sohang1').value)
+                -Number(document.getElementById('sohang2').value);
+        else if(nhan.checked)
+            ketqua.value=Number(document.getElementById('sohang1').value)
+                *Number(document.getElementById('sohang2').value);
+        else if(chia.checked)
+            ketqua.value=Number(document.getElementById('sohang1').value)
+                /Number(document.getElementById('sohang2').value);">
+</body>
+</html>

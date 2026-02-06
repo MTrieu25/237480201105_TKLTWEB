@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính toán</title>
+</head>
+<body>
+    <h2>Nhập 2 số và click vào nút tính </h2>
+    <input type="text" id="sohang1" placeholder="Số hạng 1"> <br>
+    <input type="text" id="sohang2" placeholder="Số hạng 2"> <br>
+    <input type="text" id="ketqua" placeholder="Kết quả"> <br>
+    <input type="button" value="Tính tổng" 
+    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
+        +Number(document.getElementById('sohang2').value);">
+    <input type="button" value="Tính hiệu" 
+    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
+        -Number(document.getElementById('sohang2').value);">
+    <input type="button" value="Tính tích" 
+    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
+        *Number(document.getElementById('sohang2').value);">
+    <input type="button" value="Tính thương" 
+    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
+        /Number(document.getElementById('sohang2').value);">
+</body>
+</html>

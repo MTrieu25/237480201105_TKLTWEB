@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi thuộc tính trang web</title>
+</head>
+<script language="javascript">
+    function capnhat() {
+        document.title=tieude.value;
+        document.bgColor=mauNen.value;
+        document.fgColor=mauChu.value;
+        window.defaultStatus=trangThai.value;
+    }
+</script>
+<body>
+    <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+    <input type="text" id="tieude" placeholder="Tiêu đề mới"><br>
+    <input type="text" id="mauNen" placeholder="Màu nền (ví dụ: Blue)"><br>
+    <input type="text" id="mauChu" placeholder="Màu chữ (ví dụ: White)"><br>
+    <input type="text" id="trangThai" placeholder="Nhập dòng trạng thái"><br>
+    <input type="button" value="Thay đổi" onclick="capnhat()">
+</body>
+</html>
