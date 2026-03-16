@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a {
+        display: inline-block;
+        width: 70px;
+    }
+</style>
+<body>
+    <script language="javascript">
+
+function Cong(){
+    var a = parseFloat(document.getElementById("so1").value);
+    var b = parseFloat(document.getElementById("so2").value);
+    document.getElementById("ketqua").value = a + b;
+}
+
+function Tru(){
+    var a = parseFloat(document.getElementById("so1").value);
+    var b = parseFloat(document.getElementById("so2").value);
+    document.getElementById("ketqua").value = a - b;
+}
+
+function Nhan(){
+    var a = parseFloat(document.getElementById("so1").value);
+    var b = parseFloat(document.getElementById("so2").value);
+    document.getElementById("ketqua").value = a * b;
+}
+
+function Chia(){
+    var a = parseFloat(document.getElementById("so1").value);
+    var b = parseFloat(document.getElementById("so2").value);
+    document.getElementById("ketqua").value = a / b;
+}
+</script>
+</head>
+<body>
+<span class="a">Số 1: </span>
+    <input type="text" id="so1"><br><br>
+<span class="a">Số 2: </span>
+    <input type="text" id="so2"><br><br>
+<span class="a">Kết quả: </span>
+    <input type="text" id="ketqua" readonly><br><br>
+<input type="button" value="Cộng" onclick="Cong()">
+<input type="button" value="Trừ" onclick="Tru()">
+<input type="button" value="Nhân" onclick="Nhan()">
+<input type="button" value="Chia" onclick="Chia()">
+</body>
+</html>

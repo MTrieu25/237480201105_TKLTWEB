@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <span class="a">Họ tên: </span>
+        <input type="text" id="HoTen" onkeyup="tinh()"><br>
+    <span class="a">Năm vào làm: </span>
+        <input type="text" id="NamVaoLam" onkeyup="tinh()"><br>
+    <span class="a">Hệ số: </span>
+        <input type="text" id="HeSo" onkeyup="tinh()"><br>
+    <span class="a">Lương cơ sở: </span>
+        <input type="text" id="LuongCoSo" onkeyup="tinh()"><br><hr>
+    <span class="a">Lương cơ bản: </span>
+        <input type="text" id="LuongCoBan" readonly><br>
+    <span class="a">Phụ cấp: </span>
+        <input type="text" id="PhuCap" readonly><br>
+    <span class="a">Thâm niên: </span>
+        <input type="text" id="ThamNien" readonly><br>
+    <span class="a">Thành tiền: </span>
+        <input type="text" id="ThanhTien" readonly>
+    <script>
+        function tinh() {
+            var namVaoLam = Number(document.getElementById("NamVaoLam").value);
+            var heSo = Number(document.getElementById("HeSo").value);
+            var luongCoSo = Number(document.getElementById("LuongCoSo").value);
+            var namHienTai = 2026;
+            var luongCoBan = heSo * luongCoSo;
+            var phuCap = 0.25 * luongCoBan;
+            var thamNien = namHienTai - namVaoLam;
+            var thanhTien = luongCoBan + phuCap;
+
+            if (!isNaN(luongCoBan)) {
+                document.getElementById("LuongCoBan").value = luongCoBan;
+                document.getElementById("PhuCap").value = phuCap;
+                document.getElementById("ThamNien").value = thamNien;
+                document.getElementById("ThanhTien").value = thanhTien;
+            }
+        }
+    </script>
+</body>
+</html>

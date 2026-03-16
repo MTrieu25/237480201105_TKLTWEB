@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nhập số lượng và giá</h1>
+    Số lượng: <input type="text" id="soluong">
+    Giá: <input type="text" id="gia" onkeyup="document.getElementById('thanhtien').value=
+    document.getElementById('soluong').value*document.getElementById('gia').value">
+    Thành tiền: <input type="text" id="thanhtien" readonly>USD
+</body>
+</html>

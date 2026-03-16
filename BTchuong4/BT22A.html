@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .a {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <script>
+function nhap(x){
+    document.getElementById("kq").value += x;
+}
+
+function tinh(){
+    document.getElementById("kq").value =
+    eval(document.getElementById("kq").value);
+}
+
+function xoa(){
+    document.getElementById("kq").value="";
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="kq"><br><br>
+
+<button class="a" onclick="nhap('0')">0</button>
+<button class="a" onclick="nhap('1')">1</button>
+<button class="a" onclick="nhap('2')">2</button>
+<button class="a" onclick="nhap('3')">3</button>
+<button class="a" onclick="nhap('4')">4</button>
+
+<br>
+
+<button class="a" onclick="nhap('5')">5</button>
+<button class="a" onclick="nhap('6')">6</button>
+<button class="a" onclick="nhap('7')">7</button>
+<button class="a" onclick="nhap('8')">8</button>
+<button class="a" onclick="nhap('9')">9</button>
+
+<br>
+<button class="a" onclick="nhap('+')">+</button>
+<button class="a" onclick="nhap('-')">-</button>
+<button class="a" onclick="nhap('*')">*</button>
+<button class="a" onclick="nhap('/')">/</button>
+<button class="a" onclick="tinh()">=</button>
+<br>
+
+<button class="a" onclick="xoa()">C</button>
+</body>
+</html>

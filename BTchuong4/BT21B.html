@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a {
+        display: inline-block;
+        width: 70px;
+    }
+</style>
+<body>
+    <script>
+function Tinh(){
+    var a = parseFloat(document.getElementById("so1").value);
+    var b = parseFloat(document.getElementById("so2").value);
+    var kq;
+
+    if(document.getElementById("cong").checked)
+        kq = a + b;
+    if(document.getElementById("tru").checked)
+        kq = a - b;
+    if(document.getElementById("nhan").checked)
+        kq = a * b;
+    if(document.getElementById("chia").checked)
+        kq = a / b;
+
+    document.getElementById("ketqua").value = kq;
+}
+</script>
+</head>
+<body>
+
+<span class="a">Số 1: </span>
+    <input type="text" id="so1"><br><br>
+<span class="a">Số 2: </span>
+    <input type="text" id="so2"><br><br>
+
+<input type="radio" id="cong" name="pt"> Cộng
+<input type="radio" id="tru" name="pt"> Trừ
+<input type="radio" id="nhan" name="pt"> Nhân
+<input type="radio" id="chia" name="pt"> Chia
+
+<br><br>
+
+<span class="a">Kết quả: </span>
+    <input type="text" id="ketqua" readonly><br><br>
+
+<input type="button" value="Tính" onclick="Tinh()">
+</body>
+</html>

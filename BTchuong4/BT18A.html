@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script language="javascript">
+    function Kiemtra() {
+        var nd = document.getElementsByName("noidung")[0];
+        var skt = document.getElementsByName("sokytu")[0];
+        skt.value = nd.value.length;
+        if(nd.value.length > 200) {
+            alert("Bạn đã nhập quá số ký tự cho phép!"); 
+            skt.value = nd.value.length;
+        }
+    }
+</script>
+<body style="font-family: Arial;">
+    Số ký tự đã gõ: <input type="text" name="sokytu" readonly> <br>
+    <textarea name="noidung" rows="10" cols="50" onkeyup="Kiemtra();"></textarea>  
+</body>
+</html>

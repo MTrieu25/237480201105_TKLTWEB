@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
+<body>
+    <script language="javascript">
+function TinhLuong(){
+    var namhientai = new Date().getFullYear();
+
+    var namvaolam = document.getElementById("namvaolam").value;
+    var heso = document.getElementById("heso").value;
+    var luongcoso = document.getElementById("luongcoso").value;
+
+    var luongcoban = heso * luongcoso;
+    var phucap = luongcoban * 0.25;
+    var thamnien = namhientai - namvaolam;
+    var thanhtien = luongcoban + phucap;
+
+    document.getElementById("luongcoban").value = luongcoban;
+    document.getElementById("phucap").value = phucap;
+    document.getElementById("thamnien").value = thamnien;
+    document.getElementById("thanhtien").value = thanhtien;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>TÍNH LƯƠNG NHÂN VIÊN</h2>
+
+<span class="a">Họ tên: </span>
+    <input type="text" id="hoten"><br><br>
+
+<span class="a">Năm vào làm: </span>
+    <input type="text" id="namvaolam"><br><br>
+
+<span class="a">Hệ số: </span>
+    <input type="text" id="heso"><br><br>
+
+<span class="a">Lương cơ sở: </span>
+    <input type="text" id="luongcoso"><br><hr size="3">
+
+<span class="a">Lương cơ bản: </span>
+    <input type="text" id="luongcoban" readonly><br><br>
+
+<span class="a">Phụ cấp: </span>
+    <input type="text" id="phucap" readonly><br><br>
+
+<span class="a">Thâm niên: </span>
+    <input type="text" id="thamnien" readonly><br><br>
+
+<span class="a">Thành tiền: </span>
+    <input type="text" id="thanhtien" readonly><br><br>
+
+<input type="button" value="Tính Lương" onclick="TinhLuong()">
+</body>
+</html>
