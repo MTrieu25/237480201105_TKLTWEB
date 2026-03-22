@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        .login-box { border: 1px solid black; width: 300px; padding: 20px; margin: auto; text-align: center; }
+        .input-group { margin-bottom: 10px; text-align: left; }
+        label { display: inline-block; width: 80px; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h3>TRANG ĐĂNG NHẬP</h3>
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <label>Username:</label> <input type="text" name="txtUser" required>
+            </div>
+            <div class="input-group">
+                <label>Email:</label> <input type="email" name="txtEmail" required>
+            </div>
+            <div class="input-group">
+                <label>Password:</label> <input type="password" name="txtPass" required>
+            </div>
+            <button type="submit" name="btnLogin">Login</button>
+        </form>
+    </div>
+</body>
+</html>
