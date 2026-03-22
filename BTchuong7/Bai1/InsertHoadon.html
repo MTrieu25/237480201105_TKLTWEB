@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { width: 350px; border: 1px solid #007bff; padding: 20px; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 10px; border: none; width: 100%; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h2>Nhập Hóa Đơn</h2>
+    <form action="InsertHoadon.php" method="POST">
+        <div>
+            <label>Mã hóa đơn:</label>
+            <input type="text" name="mahd" maxlength="3" required>
+        </div>
+        <div>
+            <label>Mã khách hàng :</label>
+            <input type="text" name="makh" maxlength="4"  required>
+        </div>
+        <div>
+            <label>Mã hàng hóa :</label>
+            <input type="text" name="mahang" maxlength="4"  required>
+        </div>
+        <div>
+            <label>Số lượng:</label>
+            <input type="number" name="soluong" min="1" required>
+        </div>
+        <button type="submit">Lưu Hóa Đơn</button>
+    </form>
+</body>
+</html>

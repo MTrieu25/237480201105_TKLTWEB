@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; padding: 40px; }
+        .search-box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 500px; margin: auto; text-align: center; }
+        input[type="text"] { width: 70%; padding: 12px; border: 2px solid #007bff; border-radius: 6px; font-size: 16px; }
+        button { padding: 12px 25px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="search-box">
+    <h2>Tra cứu lịch sử mua hàng</h2>
+    <form action="SearchHoadon.php" method="POST">
+        <input type="text" name="tenkh" placeholder="Nhập tên khách hàng..." required>
+        <button type="submit">Tìm kiếm</button>
+    </form>
+</div>
+
+</body>
+</html>

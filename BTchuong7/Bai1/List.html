@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 50px; }
+        .container { background: white; width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        select { width: 100%; padding: 10px; margin: 20px 0; border-radius: 4px; border: 1px solid #ddd; }
+        button { width: 100%; padding: 12px; background-color: #555; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #333; }
+        h3 { background-color: #ddd; padding: 10px; text-align: center; margin-top: 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>NHẬP DỮ LIỆU CẦN LIỆT KÊ</h3>
+    <form action="List.php" method="POST">
+        <label>Chọn dữ liệu:</label>
+        <select name="table_choice">
+            <option value="HANGHOA">Hàng hóa</option>
+            <option value="KHACHHANG">Khách hàng</option>
+            <option value="NHASANXUAT">Nhà sản xuất</option>
+            <option value="HOADON">Hóa đơn</option>
+        </select>
+        <button type="submit">In dữ liệu</button>
+    </form>
+</div>
+
+</body>
+</html>

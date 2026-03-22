@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { width: 300px; border: 1px solid #ccc; padding: 20px; border-radius: 5px; }
+        div { margin-bottom: 10px; }
+        label { display: block; margin-bottom: 5px; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background-color: #4CAF50; color: white; padding: 10px; border: none; width: 100%; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Thêm Hàng Hóa</h2>
+    <form action="InsertHanghoa.php" method="POST">
+        <div>
+            <label>Mã hàng:</label>
+            <input type="text" name="mahang" maxlength="4" required>
+        </div>
+        <div>
+            <label>Tên hàng:</label>
+            <input type="text" name="tenhang" maxlength="40" required>
+        </div>
+        <div>
+            <label>Mã nhà sản xuất:</label>
+            <input type="text" name="mansx" maxlength="2" required>
+        </div>
+        <div>
+            <label>Năm sản xuất:</label>
+            <input type="number" name="namsx" required>
+        </div>
+        <div>
+            <label>Giá bán:</label>
+            <input type="number" name="gia" required>
+        </div>
+        <button type="submit">Lưu vào CSDL</button>
+    </form>
+</body>
+</html>
