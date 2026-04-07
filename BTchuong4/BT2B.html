@@ -6,19 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <script language="JavaScript">
+    <script>
     function hienThongBao() {
-        document.forms[0].txtthongbao.value = "Hello Javascript";
+        document.getElementById("a").value = "Hello Javascript";
     }
     </script>
 
     <form>
-    <input type="text" name="txtthongbao">
+    <input type="text" id="a" name="txtthongbao">
     <br><br>
-    <input type="button"
-           name="Hello"
-           value="Hello"
-           onclick="hienThongBao()">
+    <input type="button" name="Hello" value="Hello" onclick="hienThongBao()">
     </form>
 </body>
 </html>

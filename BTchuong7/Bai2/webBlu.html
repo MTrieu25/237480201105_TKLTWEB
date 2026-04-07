@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý nhân sự - ĐH Bạc Liêu</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 14px; margin: 20px; }
+        .container { border: 2px solid #000; max-width: 1000px; margin: auto; }
+        
+        /* Header */
+        header { display: flex; border-bottom: 2px solid #000; align-items: center; padding: 10px; }
+    
+        .system-name { width: 100%; text-align: center; font-weight: bold; font-size: 18px; }
+
+        /* Main Content Wrapper */
+        .wrapper { display: flex; }
+
+        /* Sidebar */
+        aside { width: 25%; border-right: 1px solid #000; }
+        .menu-item { border-bottom: 1px solid #000; padding: 5px 10px; display: block; text-decoration: none; color: #000; }
+        .menu-title { background-color: #ddd; font-weight: bold; padding: 5px 10px; border-bottom: 1px solid #000; }
+
+        /* Main Section */
+        main { width: 75%; flex-grow: 1; padding: 15px; }
+        .info-header { font-weight: bold; margin-bottom: 10px; }
+        .content-layout { display: flex; gap: 15px; }
+        .text-content { flex: 1; text-align: justify; }
+        .building-img { width: 250px; border: 1px solid #000; }
+
+        /* Footer */
+        footer { border-top: 2px solid #000; padding: 10px; text-align: left; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-left">
+            <img src="logoDHBL.png" alt="Logo" width="200" height="80">
+        </div>
+        <div class="system-name">QUẢN LÝ NHÂN SỰ</div>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <a href="https://blu.edu.vn" class="menu-item"><b>Trang chủ</b></a>
+            <div class="menu-title">Đơn vị trực thuộc</div>
+            <a href="#" class="menu-item">Khoa KT & CN</a>
+            <a href="#" class="menu-item">Khoa Sư phạm</a>
+            <a href="#" class="menu-item">Khoa NN & CS</a>
+            <a href="#" class="menu-item">Khoa Kinh tế và Luật</a>
+            
+            <div class="menu-title">Hồ sơ nhân viên</div>
+            <a href="#" class="menu-item">Danh sách</a>
+            <a href="#" class="menu-item">Thêm hồ sơ</a>
+            <a href="#" class="menu-item">Tìm hồ sơ</a>
+
+            <div class="menu-title">Quản lý tiền lương</div>
+            <a href="#" class="menu-item">Bảng lương</a>
+            <a href="#" class="menu-item">Tính lương</a>
+        </aside>
+
+        <main>
+            <div class="info-header">
+                Tên tiếng Anh: BAC LIEU UNIVERSITY<br>
+                Tên viết tắt: Tiếng Việt ĐHBL - Tiếng Anh BLU
+            </div>
+            
+            <div class="content-layout">
+                <div class="text-content">
+                    Trường ĐHBL là trường đại học công lập, là cơ sở giáo dục đại học đa ngành, đa hệ, được thành lập theo Quyết định
+                     số 1558/QĐ-TTg ngày 24/11/2006 của Thủ tướng Chính phủ. 
+                    Việc thành lập Trường ĐHBL là phù hợp theo ý chí, nguyện vọng của Đảng bộ và nhân dân tỉnh Bạc Liêu, đáp ứng yêu cầu 
+                    đào tạo và phát triển nguồn nhân lực chất lượng cao phục vụ sự nghiệp công nghiệp hoá, hiện đại hoá của
+                    Bạc Liêu và vùng Bán đảo Cà Mau.
+                </div>
+                <img src="DHBL.jpg" alt="Building" class="building-img">
+            </div>
+
+            <h3>II. CHỨC NĂNG NHIỆM VỤ</h3>
+            <p><b>Về đào tạo:</b> Tổ chức đào tạo đa dạng các cấp trình độ từ cao đẳng, đại học đến sau đại học và tổ chức các loại hình liên thông, vừa học vừa làm,
+            liên kết,v.v. nhằm đáp ứng nhu cầu ngày càng cao và đa dạng của xã hội, đặt biệ là nguồn nhân lực có chất lượng, phục vụ phát triển kinh tế - xã hội của vùng 
+            Bán đảo Cà Mau và khu vực Đồng bằng sông Cửu Long.</p>
+            <p><b>Về khoa học công nghệ:</b> Tổ chức nghiên cứu khoa học định hướng ứng dụng, chú trọng giải quyết các vấn đề cấp bách và lâu dài trong phát triển kinh tế
+            xã hội của địa phương và vùng. Tập trung nghiên cứu và chuyển giao công nghệ, ưu tiên giải quyết các vấn đề được xã hội quan tâm và thực hiện các dịch vụ
+             khoa học phục vụ cộng đồng.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p><b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b><br>
+        <b>Chất lượng - Sáng tạo - Trách nhiệm - Hội nhập</b><br>
+        Điện thoại: 02913822653<br>
+        Email: mail@blu.edu.vn<br>
+        Địa chỉ: Số 178 đường Võ Thị Sáu, P. 8, TP. Bạc Liêu, Tỉnh Bạc Liêu</p>     
+    </footer>
+</div>
+
+</body>
+</html>
